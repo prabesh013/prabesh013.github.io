@@ -1,10 +1,360 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>hello</title>
-	</head>
-	<body>
-		<h1>Hello World</h1>
-		<p>bug fix</p>
-	</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prabesh Nepal</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto&family=Stalemate&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME ICONS -->
+    <script src="https://kit.fontawesome.com/e6ef25ac89.js" crossorigin="anonymous"></script>
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
+      <div class="container">
+        <a class="navbar-brand px-2 py-0" href="#"> PN </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="gap: 20px">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#qualifications">Qualifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="full-height d-flex">
+      <div class="container d-flex">
+        <div class="row mx-auto">
+          <div
+            class="col-12 col-lg-8 d-flex flex-column justify-content-center text-center text-lg-start"
+          >
+            <h1>I'm <span class="name">Prabesh</span> Nepal</h1>
+            <p class="lead mt-3">
+              I love to solve <span class="cs">CS</span> problems
+              <span class="fw-bold">[P != NP]</span>
+              <span class="fs-4">🤔</span>
+              <br />
+              and scratch my head.<span class="st"> Live Long and Prosper</span>
+              <span class="fs-4">🖖</span>
+            </p>
+            <a
+              href="https://drive.google.com/file/d/1QCmJ1ozieuwcHVtky49kQJhkpbLOWa6-/view?usp=drive_link"
+              class="mt-5 align-self-center align-self-lg-start btns"
+              id="resume"
+              >Resume/CV</a
+            >
+          </div>
+          <div class="d-none d-lg-block col-lg-4">
+            <img src="./images/computer.svg" alt="" class="img-fluid h-100" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="full-height d-flex">
+      <div class="container">
+        <h2>About me</h2>
+        <div class="row pt-5">
+          <div class="col-12 col-lg-6 px-5"  data-aos="fade-left">
+            <img
+              src="./images/prabesh.jpg"
+              alt="prabesh nepal"
+              class="img-fluid"
+              id="personal-img"
+            />
+          </div>
+          <div class="col-12 col-lg-6 d-flex flex-column justify-content-between"  data-aos="fade-right">
+            <div>
+              <p class="about-text mt-5 mt-lg-0">
+                Hello there! <br />
+                I am a <span class="fw-bold fst-italic ce">computer engineer</span>&nbsp;&nbsp;from
+                <span class="location">Kathmandu, Nepal</span> and a passionate thinker who loves
+                theoretical Computer Science, a little bit of mathematics and coding. I did my
+                engineering from <span class="kec">Kantipur Engineering College, Nepal.</span>
+                <br />
+              </p>
+              <p>
+                I have some experience in the tech industry and I am a teacher as well. I have
+                taught programming languages like C/C++, Python & packages (Numpy, Pandas etc). I
+                find teaching, sth to sb, to be a fun & challenging experience and the student's
+                "Ahhh okay" expressions really inspires me.
+              </p>
+              <hr />
+              <ul class="social-links ps-0 fs-1">
+                <li class="mx-1 d-inline-block">
+                  <a href="https://github.com/prabesh013" class="social-icons"
+                    ><i class="fa-brands fa-github" style="color: #000000"></i
+                  ></a>
+                </li>
+                <li class="mx-1 d-inline-block">
+                  <a
+                    href="https://www.linkedin.com/in/prabesh-nepal-41991b10a/"
+                    class="social-icons"
+                    ><i class="fa-brands fa-linkedin" style="color: #000000"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <p id="sign" class="mb-0">Prabesh . N</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUALIFICATIONS -->
+    <section id="qualifications" class="full-height d-flex">
+      <div class="container">
+        <h2 class="mb-5">Qualifications</h2>
+        <div class="row g-5">
+          <div class="col-12 col-lg-6">
+            <h3 class="mb-3" id="edu">Education</h3>
+            <div class="educations d-flex flex-column" style="gap: 2rem">
+              <div class="card" data-aos="fade-right">
+                <div class="card-body">
+                  <h4 class="card-title">BE in Computer Engineering</h4>
+                  <p class="card-subtitle mb-2 text-muted">Tribhuvan University, Nepal</p>
+                  <p class="card-text date">2015 - 2019</p>
+                  <a href="https://kec.edu.np/" class="card-link"
+                    ><i class="fa-solid fa-arrow-right" style="color: #000000"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card" data-aos="fade-right">
+                <div class="card-body">
+                  <h4 class="card-title">High School</h4>
+                  <p class="card-subtitle mb-2 text-muted">GHSBS Pokhara, Nepal</p>
+                  <p class="card-text date">2013 - 2015</p>
+                  <a href="https://gbs.edu.np/" class="card-link"
+                    ><i class="fa-solid fa-arrow-right" style="color: #000000"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <h3 class="mb-3" id="exe">Experience</h3>
+            <div class="experiences d-flex flex-column" style="gap: 2rem">
+              <div class="card" data-aos="fade-left">
+                <div class="card-body">
+                  <h4 class="card-title">Research Assistant</h4>
+                  <p class="card-subtitle mb-2 text-muted">Genese Solution, Nepal</p>
+                  <p class="card-text date">Jul 2021 - Aug 2022</p>
+                  <a href="https://www.genesesolution.com/" class="card-link"
+                    ><i class="fa-solid fa-arrow-right" style="color: #000000"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card" data-aos="fade-left">
+                <div class="card-body">
+                  <h4 class="card-title">Associate Software Engineer & Trainee</h4>
+                  <p class="card-subtitle mb-2 text-muted">Vacker360, Nepal</p>
+                  <p class="card-text date">Jan 2021 - Oct 2021 & Sep 2020 - Dec 2020</p>
+                  <a href="https://www.vacker360.com/" class="card-link"
+                    ><i class="fa-solid fa-arrow-right" style="color: #000000"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card" data-aos="fade-left">
+                <div class="card-body">
+                  <h4 class="card-title">Teaching Assistant (Data Analytics)</h4>
+                  <p class="card-subtitle mb-2 text-muted">Genese Cloud Academy, Nepal</p>
+                  <p class="card-text date">May 2021 - Jun 2021</p>
+                  <a href="https://www.genesecloud.academy/" class="card-link"
+                    ><i class="fa-solid fa-arrow-right" style="color: #000000"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card" data-aos="fade-left">
+                <div class="card-body">
+                  <h4 class="card-title">Software Engineer Intern</h4>
+                  <p class="card-subtitle mb-2 text-muted">Leapfrog Technology, Nepal</p>
+                  <p class="card-text date">Jan 2020 - Aug 2020</p>
+                  <a href="https://www.lftechnology.com/" class="card-link"
+                    ><i class="fa-solid fa-arrow-right" style="color: #000000"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="full-height d-flex">
+      <div class="container">
+        <h2 class="mb-5">Projects</h2>
+        <div class="row gy-5 overflow-hidden">
+          <div class="col-12 col-md-6 col-lg-4 p-3"   data-aos="flip-left">
+            <div class="card">
+              <img src="./images/artjunks.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">ArtJunks</h5>
+                <p class="card-text">Responsive website design from figma.</p>
+
+                <a href="https://figma-responsive-design-mockup.vercel.app/" class="project-links">
+                  Preview
+                  <i class="fa-solid fa-arrow-right" style="color: #000000"></i>
+                </a>
+                <span> | </span>
+                <a
+                  href="https://github.com/prabesh013/figma-responsive-design-mockup"
+                  class="project-links"
+                >
+                  Github
+                  <i class="fa-brands fa-github" style="color: #000000"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-3"  data-aos="flip-left">
+            <div class="card" >
+              <img src="./images/fardi.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Fardi Sahin</h5>
+                <p class="card-text">Responsive website design from figma.</p>
+                <a href="https://figma-design-desktop.vercel.app/" class="project-links">
+                  Preview
+                  <i class="fa-solid fa-arrow-right" style="color: #000000"></i>
+                </a>
+                <span> | </span>
+                <a href="https://github.com/prabesh013/figma-design-desktop" class="project-links">
+                  Github
+                  <i class="fa-brands fa-github" style="color: #000000"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-3"  data-aos="flip-left">
+            <div class="card">
+              <img src="./images/calculator.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Scientific Calculator</h5>
+                <p class="card-text">A replica of Google's Scientific Calculator. (Buggy)</p>
+                <a href="https://scientific-calculator-dun.vercel.app/" class="project-links">
+                  Preview
+                  <i class="fa-solid fa-arrow-right" style="color: #000000"></i>
+                </a>
+                <span> | </span>
+                <a href="https://github.com/prabesh013/scientific-calculator" class="project-links">
+                  Github
+                  <i class="fa-brands fa-github" style="color: #000000"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="full-height d-flex">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <div class="row">
+          <div class="col-12 col-lg-6 p-5 text-center" data-aos="fade-right">
+            <img src="./images/contact.svg" alt="contact" class="img-fluid w-75" />
+          </div>
+          <div class="col-12 col-lg-6 p-5" data-aos="fade-left">
+            <form action="https://formbold.com/s/3VpZd" method="POST">
+              <div class="row g-3">
+                <div class="col-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Name"
+                    aria-label="Your name"
+                    name="name"
+                  />
+                </div>
+                <div class="col-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Email"
+                    aria-label="Your Email"
+                    name="email"
+                  />
+                </div>
+                <div class="col-12">
+                  <textarea class="form-control" id="Textarea" rows="6" name="message"></textarea>
+                </div>
+              </div>
+              <button type="submit" class="btns mt-5">Send it</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-light border-top py-4">
+      <div class="container">
+        <p class="text-center mb-0">Copyright © 2023. Prabesh Nepal</p>
+      </div>
+    </footer>
+
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
 </html>
