@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.DS_Store
+*.local
+
+# Private editorial notes used while drafting site content.
+docs/content-notes.md
